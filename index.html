@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akan Name Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Akan Name Generator</h1>
+    <section class="info section">
+        <header>History of Akan Names </header>
+        <p>
+            The Akan people are an ethnic group primarily from Ghana and parts of Ivory Coast. Akan names are deeply tied to their culture, beliefs, and traditions.
+        </p>
+        
+        <p>
+            Origin and Meaning
+
+Akan names are traditionally based on the day of the week a person is born.
+
+This system of “day names” is rooted in the Akan belief that the day of birth influences personality and destiny.
+
+Each day of the week has a male and female name.
+        </p>
+
+    <form id="akanForm">
+        <label for="day">Day:</label>
+        <input type="number" id="day" min="1" max="31" required>
+
+        <label for="month">Month:</label>
+        <input type="number" id="month" min="1" max="12" required>
+
+        <label for="year">Year:</label>
+        <input type="number" id="year" min="1900" max="2099" required>
+
+        <div class="gender">
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+        </div>
+
+        <button type="button" id="generateBtn">Generate Akan Name</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+<!-- Link the JS file -->
+<script src="script.js"></script>
+</body>
+</html>
+
